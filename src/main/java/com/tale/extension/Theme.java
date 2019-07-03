@@ -348,7 +348,7 @@ public final class Theme {
         }
         if (StringKit.isNotBlank(contents.getThumbImg())) {
             String newFileName       = TaleUtils.getFileName(contents.getThumbImg());
-            String thumbnailImgUrl = (contents.getThumbImg()).replace(newFileName, "thumbnail_" + newFileName);
+            String thumbnailImgUrl = (contents.getThumbImg()).replace(newFileName, newFileName);
             return thumbnailImgUrl;
         }
         String content = article(contents.getContent());

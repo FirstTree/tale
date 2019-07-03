@@ -127,6 +127,7 @@ var vm = new Vue({
                 tale.alertWarn('请输入文章内容');
                 return;
             }
+
             clearInterval(refreshIntervalId);
             $vm.article.status  = status;
 
